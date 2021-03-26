@@ -8,8 +8,8 @@ import {useState} from "react";
 
 
 export  default function Timer() {
-    const body = document.querySelector('body')
-    const h2 = document.querySelector('h2')
+
+
     console.log(h2)
 const onStartHandler =(e) => {
     e.disabled = true
@@ -20,7 +20,8 @@ const onStartHandler =(e) => {
         let    div = document.createElement('div')
             div.textContent = i.toString()
             h2.appendChild(div)
-            i++
+             i++
+            return i
 
 
         } else {
